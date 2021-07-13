@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Invalid..!!">
+            </a>
+        </nav>
+        <a class="navbar-brand" href="#">Highlighter</a>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#tagline">About us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="form-group">
+        <textarea class="form-control" id="displayarea" name="text" rows="5"
+            placeholder="Add your notes here :"></textarea>
+    </div>
+    <section class="main">
+        <div class="row">
+            <div class="col">
+                <button type="button" id="hbutton" class="btn btn-primary btn-lg">Highlight <i
+                        class="fas fa-highlighter"></i></button>
+                <div id="addbox">
+                    <div id="red"></div>
+                    <div id="yellow"></div>
+                    <div id="green"></div>
+                    <div id="blue"></div>
+                    <div id="pink"></div>
+                </div>
+            </div>
+            <div class="col">
+                <button type="button" id="uhbutton" class="btn btn-warning btn-lg">UnHighlight <i
+                        class="fas fa-tint-slash"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="saving">
+        <button id="savebutton" type="button" class="btn btn-outline-success btn-lg">Save Now <i
+                class="fas fa-check-circle"></i></button>
+    </div>
+    <div class="form-group">
+        <label>Filename :</label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter File name">
+        <small id="fileHelp" class="form-text text-muted">Never save it as an empty file</small>
+    </div>
+    <div class="row">
+        <small id="Htmlrecom" class="form-text text-muted">Save as HTML - Recommended for saving code snippets..!</small>
+        <div class="col">
+            <button type="submit" class="btn btn-outline-dark btn-md" id="htmlsave">Save As HTML</button>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-outline-dark btn-mds" id="txtsave">Save As TXT</button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="tagline">
+            Developed by JNTUHCEH CSE Students
+        </div>
+        <div class="container-fluid">
+            <i class="fab fa-linkedin  fa-3x"></i>
+            <i class="fab fa-instagram fa-3x"></i>
+            <i class="fab fa-facebook fa-3x"></i>
+            <i class="fab fa-twitter fa-3x"></i>
+        </div>
+    </footer>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
